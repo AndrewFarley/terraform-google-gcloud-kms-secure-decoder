@@ -77,7 +77,7 @@ Now you can safely store that KMS ciphertext inside your tfvars files, and not w
 Author, Support, Feedback, Questions
 ------
 
-<br/>Module created and managed by [Farley](https://github.com/andrewfarley) - farley _at_ neonsurge <dot> com
+Module created and managed by [Farley](https://github.com/andrewfarley) - farley _at_ neonsurge **dot** com
 
 Please feel free to file Github bugs if you find any or suggestions for features!  If you're technically minded, please feel free to fork and make your own modifications.  If you make any fixed/changes that are awesome, please send me pull requests or patches.
 
