@@ -6,7 +6,7 @@ variable "key" {}
 variable "ciphertext" {}
 
 # Perform our python based GCloud KMS Decrypt
-data "external" "example" {
+data "external" "decode-google-cloud-kms" {
   program = ["python", "${path.module}/get-secret.py"]
 
   query = {
@@ -20,5 +20,5 @@ data "external" "example" {
 
 # Output our KMS plaintext value
 output "plaintext" {
-  value = "${data.external.example.result["output"]}"
+  value = "${data.external.decode-google-cloud-kms.result["output"]}"
 }
