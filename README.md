@@ -1,13 +1,9 @@
 Terraform Module - Google Cloud KMS Decoder
 ========================
 
-Purpose
-------
-
 Google Cloud KMS Secrets if you decode them in Terraform will have their plaintext value show
-up in the [state file as seen here](https://www.terraform.io/docs/state/sensitive-data.html), which on most strict compliance and regulatory entities is
-a huge .  Secrets plaintext should NEVER live anywhere on any
-static location, and should only ever be requested when they need to be used.
+up in the [state file](https://www.terraform.io/docs/state/sensitive-data.html), which on most strict compliance and regulatory entities is
+a huge red flag.  Secrets plaintext should NEVER live anywhere on any system, and should only ever be requested when they need to be used.  And naturally only stored in memory during runtime.
 
 Requirements
 ------
