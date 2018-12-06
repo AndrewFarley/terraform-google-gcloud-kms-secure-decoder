@@ -64,7 +64,7 @@ resource "google_kms_crypto_key" "secrets" {
   key_ring = "${google_kms_key_ring.secrets.id}"
 }
 module "secret" {
-  source = "github.com/andrewfarley/terraform-kms-secret-decoder.git"
+  source = "github.com/andrewfarley/terraform-google-cloud-kms-decoder.git"
   project    = "${var.project}"
   region     = "${var.region}"
   keyring    = "my-secrets"
