@@ -18,7 +18,8 @@ data "external" "decode-google-cloud-kms" {
   }
 }
 
-# Output our KMS plaintext value
+# Output our KMS plaintext value, marked as sensitive
 output "plaintext" {
-  value = "${data.external.decode-google-cloud-kms.result["output"]}"
+  value     = "${data.external.decode-google-cloud-kms.result["output"]}"
+  sensitive = true
 }
